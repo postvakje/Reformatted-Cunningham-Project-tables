@@ -1,7 +1,7 @@
 # Reformatted Cunningham Project Tables
  The goal of this project is to reformat the data files from [The Cunningham Project](https://homes.cerias.purdue.edu/~ssw/cun/) into a more machine readable JSON format listing all the prime factors in a list.
  
- Currently the JSON files are created from data in the April 6, 2022 file at (https://homes.cerias.purdue.edu/~ssw/cun/pmain422.txt)
+ Currently the JSON files are created from data in the April 6, 2022 file at Sam Wagstaff's website (https://homes.cerias.purdue.edu/~ssw/cun/pmain422.txt)
 
  So far, the following files are available:
 

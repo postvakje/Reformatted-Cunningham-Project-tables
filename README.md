@@ -23,7 +23,7 @@ For instance, the following Python code will read the file
     import json
     table2mdict = dict(map(lambda x: (int(x[0]), x[1]), json.load(open('pmain422_table2-.json','r'))['table2-_data'].items()))
     print(table2mdict[12])
-    >> [3, 3, 5, 7, 13]
+    >> [3, 3, 5, 7, 13]  # 2^12-1 = 3^2*5*7*13
 
 
 The following code will return, instead of a list of prime factors, a dictionary of (prime, multiplicity) key-value pairs, similar to the output of `factorint` in [Sympy](https://www.sympy.org/en/index.html).
@@ -32,7 +32,7 @@ The following code will return, instead of a list of prime factors, a dictionary
     from collections import Counter
     table2mdict2 = dict(map(lambda x: (int(x[0]), dict(Counter(x[1]))), json.load(open('pmain422_table2-.json','r'))['table2-_data'].items()))
     print(table2mdict2[18])
-    >> {3: 3, 7: 1, 19: 1, 73: 1}
+    >> {3: 3, 7: 1, 19: 1, 73: 1}  # 2^18-1 = 3^3*7*19*73
 
 **TODO**: 
 1. include values of $m$ for which there are composite factors that have not been factored yet.
